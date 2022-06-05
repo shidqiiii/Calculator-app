@@ -1,0 +1,55 @@
+.theme-1 {
+  background-color: #3a4764;
+}
+
+.theme-1 header {
+  color: white;
+}
+
+.theme-1 .input-number {
+  background-color: #182034;
+  color: white;
+}
+
+.theme-1 .input-number::-webkit-input-placeholder {
+  color: white;
+}
+
+.theme-1 .input-number:-ms-input-placeholder {
+  color: white;
+}
+
+.theme-1 .input-number::-ms-input-placeholder {
+  color: white;
+}
+
+.theme-1 .input-number::placeholder {
+  color: white;
+}
+
+.theme-1 .input-button {
+  background-color: #182034;
+}
+
+.theme-1 .input-button .btn-reset,
+.theme-1 .input-button .btn-del {
+  background-color: #637097 !important;
+  color: white !important;
+  -webkit-box-shadow: 0px 5px 0px 0px #404e72 !important;
+          box-shadow: 0px 5px 0px 0px #404e72 !important;
+}
+
+.theme-1 .input-button .btn-sum {
+  background-color: #d03f2f !important;
+  color: white !important;
+  -webkit-box-shadow: 0px 5px 0px 0px #93261a !important;
+          box-shadow: 0px 5px 0px 0px #93261a !important;
+}
+
+.theme-1 .input-button .btn {
+  background-color: #eae3dc;
+  color: #444b5a;
+  -webkit-box-shadow: 0px 5px 0px 0px #b4a597;
+          box-shadow: 0px 5px 0px 0px #b4a597;
+}
+/*# sourceMappingURL=Color.css.map */

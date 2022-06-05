@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+$font-family: "League Spartan", sans-serif;
+
+* {
+  font-family: $font-family;
+  box-sizing: border-box;
+}
+
+.calculator {
+  max-width: 500px;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 10px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input-number {
+    width: 100%;
+    font-size: 50px;
+    text-align: end;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    -webkit-appearance: none;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  .input-button {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 15px;
+    padding: 20px 10px;
+    justify-content: center;
+    border-radius: 10px;
+
+    .btn-reset {
+      grid-column: 1 / 3;
+    }
+
+    .btn-sum {
+      grid-column: 3 / 5;
+    }
+
+    .btn {
+      font-size: 32px;
+      padding: 15px 10px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        position: relative;
+        top: 5px;
+        box-shadow: none !important;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
