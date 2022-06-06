@@ -11,10 +11,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -31,8 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Website](./images/screenshoot_web.png)
-![Mobile](./images/screenshoot_mobile.png)
+![Website](./public/screenshoot_web.png)
+![Mobile](./public/screenshoot_mobile.png)
 
 ### Links
 
