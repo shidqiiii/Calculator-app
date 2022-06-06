@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Button from "../partials/Button";
 import Headertop from "../partials/Headertop";
 
@@ -6,10 +6,9 @@ function Calculator() {
   const [input, setInput] = useState(0);
   const [operator, setOperator] = useState("");
   const [lastNumber, setLastNumber] = useState(0);
-  // const [currentNumber, setcurrentNumber] = useState(0);
 
   const inputNumber = (e) => {
-    if (input === 0 || parseInt(input) === 0) {
+    if (input === 0) {
       setInput(e.target.value);
     } else {
       setInput(input + e.target.value);
@@ -17,9 +16,9 @@ function Calculator() {
   };
 
   const reset = () => {
-    setInput("");
+    setInput(0);
     setOperator("");
-    setLastNumber("");
+    setLastNumber(0);
   };
 
   const deleteNumber = () => {
@@ -27,39 +26,44 @@ function Calculator() {
   };
 
   const inputOperator = (e) => {
-    setOperator(e.target.value);
-    setLastNumber(input);
-    setInput("");
+    if (operator === "") {
+      setOperator(e.target.value);
+      setLastNumber(input);
+      setInput(0);
+    }
   };
 
   const total = () => {
+    let cal = 0;
     switch (operator) {
       case "+":
-        setInput(parseFloat(lastNumber) + parseInt(input));
+        cal = parseFloat(lastNumber) + parseFloat(input);
         break;
 
       case "-":
-        setInput(parseFloat(lastNumber) - parseInt(input));
+        cal = parseFloat(lastNumber) - parseFloat(input);
         break;
 
       case "*":
-        setInput(parseFloat(lastNumber) * parseInt(input));
+        cal = parseFloat(lastNumber) * parseFloat(input);
         break;
 
       case "/":
-        setInput(parseFloat(lastNumber) / parseInt(input));
+        cal = parseFloat(lastNumber) / parseFloat(input);
         break;
 
       default:
         break;
     }
+    setInput(cal);
     setLastNumber(0);
+    setOperator("");
   };
 
   return (
     <div className="calculator theme-1">
       <Headertop />
-      <input type="number" className="input-number" placeholder="0" disabled value={input} />
+      <input type="text" className="input-number" placeholder="0" disabled value={input} />
       <Button inputNumber={inputNumber} reset={reset} deleteNumber={deleteNumber} inputOperator={inputOperator} total={total} />
       {console.log(lastNumber, operator, input)}
     </div>

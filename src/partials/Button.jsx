@@ -39,7 +39,9 @@ function Button(props) {
       <button className="btn btn-operator" value={"-"} onClick={props.inputOperator}>
         &minus;
       </button>
-      <button className="btn">,</button>
+      <button className="btn" value={"."} onClick={props.inputNumber}>
+        ,
+      </button>
       <button className="btn" value={0} onClick={props.inputNumber}>
         0
       </button>
