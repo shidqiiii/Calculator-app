@@ -6,6 +6,14 @@
   color: white;
 }
 
+.theme-1 header .theme .container {
+  background-color: #232c43;
+}
+
+.theme-1 header .theme .button {
+  background-color: #d03f2f;
+}
+
 .theme-1 .input-number {
   background-color: #182034;
   color: white;
@@ -51,5 +59,137 @@
   color: #444b5a;
   -webkit-box-shadow: 0px 5px 0px 0px #b4a597;
           box-shadow: 0px 5px 0px 0px #b4a597;
+}
+
+.theme-2 {
+  background-color: #e6e6e6;
+}
+
+.theme-2 header {
+  color: white;
+  color: #35352c;
+}
+
+.theme-2 header .theme .container {
+  background-color: #d1cccc;
+}
+
+.theme-2 header .theme .button {
+  background-color: #ca5502;
+  position: relative;
+  left: 17px;
+}
+
+.theme-2 .input-number {
+  background-color: #ededed;
+  color: #35352c;
+}
+
+.theme-2 .input-number::-webkit-input-placeholder {
+  color: white;
+}
+
+.theme-2 .input-number:-ms-input-placeholder {
+  color: white;
+}
+
+.theme-2 .input-number::-ms-input-placeholder {
+  color: white;
+}
+
+.theme-2 .input-number::placeholder {
+  color: white;
+}
+
+.theme-2 .input-button {
+  background-color: #d1cccc;
+}
+
+.theme-2 .input-button .btn-reset,
+.theme-2 .input-button .btn-del {
+  background-color: #377f86 !important;
+  color: white !important;
+  -webkit-box-shadow: 0px 5px 0px 0px #1b5f65 !important;
+          box-shadow: 0px 5px 0px 0px #1b5f65 !important;
+}
+
+.theme-2 .input-button .btn-sum {
+  background-color: #ca5502 !important;
+  color: white !important;
+  -webkit-box-shadow: 0px 5px 0px 0px #893901 !important;
+          box-shadow: 0px 5px 0px 0px #893901 !important;
+}
+
+.theme-2 .input-button .btn {
+  background-color: #e5e4e1;
+  color: #35352c;
+  -webkit-box-shadow: 0px 5px 0px 0px #a69d91;
+          box-shadow: 0px 5px 0px 0px #a69d91;
+}
+
+.theme-3 {
+  background-color: #160628;
+}
+
+.theme-3 header {
+  color: white;
+  color: #ffe53d;
+}
+
+.theme-3 header .theme .container {
+  background-color: #1d0934;
+}
+
+.theme-3 header .theme .button {
+  background-color: #00e0d1;
+  position: relative;
+  left: 36px;
+}
+
+.theme-3 .input-number {
+  background-color: #1d0934;
+  color: #ffe53d;
+}
+
+.theme-3 .input-number::-webkit-input-placeholder {
+  color: white;
+}
+
+.theme-3 .input-number:-ms-input-placeholder {
+  color: white;
+}
+
+.theme-3 .input-number::-ms-input-placeholder {
+  color: white;
+}
+
+.theme-3 .input-number::placeholder {
+  color: white;
+}
+
+.theme-3 .input-button {
+  background-color: #1d0934;
+}
+
+.theme-3 .input-button .btn-reset,
+.theme-3 .input-button .btn-del {
+  background-color: #58077d !important;
+  color: white !important;
+  -webkit-box-shadow: 0px 5px 0px 0px #bc15f4 !important;
+          box-shadow: 0px 5px 0px 0px #bc15f4 !important;
+}
+
+.theme-3 .input-button .btn-sum {
+  background-color: #00e0d1 !important;
+  color: #1b2428 !important;
+  -webkit-box-shadow: 0px 5px 0px 0px #6cf9f2 !important;
+          box-shadow: 0px 5px 0px 0px #6cf9f2 !important;
+}
+
+.theme-3 .input-button .btn {
+  background-color: #341c4f;
+  color: #ffe53d;
+  -webkit-box-shadow: 0px 5px 0px 0px #871c9c;
+          box-shadow: 0px 5px 0px 0px #871c9c;
 }
 /*# sourceMappingURL=Color.css.map */

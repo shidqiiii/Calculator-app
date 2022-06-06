@@ -60,9 +60,33 @@ function Calculator() {
     setOperator("");
   };
 
+  const [theme, setTheme] = useState(1);
+
+  const selectTheme = () => {
+    switch (theme) {
+      case 1:
+        document.body.style = "background: hsl(0, 0%, 90%);";
+        setTheme(theme + 1);
+        break;
+
+      case 2:
+        document.body.style = "background: hsl(268, 75%, 9%);";
+        setTheme(theme + 1);
+        break;
+
+      case 3:
+        document.body.style = "background: hsl(222, 26%, 31%);";
+        setTheme(1);
+        break;
+
+      default:
+        break;
+    }
+  };
+
   return (
-    <div className="calculator theme-1">
-      <Headertop />
+    <div className={"calculator theme-" + theme}>
+      <Headertop selectTheme={selectTheme} />
       <input type="text" className="input-number" placeholder="0" disabled value={input} />
       <Button inputNumber={inputNumber} reset={reset} deleteNumber={deleteNumber} inputOperator={inputOperator} total={total} />
       {console.log(lastNumber, operator, input)}

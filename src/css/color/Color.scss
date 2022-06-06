@@ -10,11 +10,46 @@ $btn-1-shadow: hsl(28, 16%, 65%);
 $btn-text-operator-1: hsl(0, 0, 100%);
 $btn-text-1: hsl(221, 14%, 31%);
 
+$main-2: hsl(0, 0%, 90%);
+$keypad-2: hsl(0, 5%, 81%);
+$screen-2: hsl(0, 0%, 93%);
+$btn-reset-2: hsl(185, 42%, 37%);
+$btn-reset-2-shadow: hsl(185, 58%, 25%);
+$btn-sum-2: hsl(25, 98%, 40%);
+$btn-sum-2-shadow: hsl(25, 99%, 27%);
+$btn-2: hsl(45, 7%, 89%);
+$btn-2-shadow: hsl(35, 11%, 61%);
+$btn-text-operator-2: hsl(0, 0, 100%);
+$btn-text-2: hsl(60, 10%, 19%);
+
+$main-3: hsl(268, 75%, 9%);
+$keypad-3: hsl(268, 71%, 12%);
+$screen-3: hsl(268, 71%, 12%);
+$btn-reset-3: hsl(281, 89%, 26%);
+$btn-reset-3-shadow: hsl(285, 91%, 52%);
+$btn-sum-3: hsl(176, 100%, 44%);
+$btn-sum-3-shadow: hsl(177, 92%, 70%);
+$btn-3: hsl(268, 47%, 21%);
+$btn-3-shadow: hsl(290, 70%, 36%);
+$btn-text-operator-3: hsl(0, 0, 100%);
+$btn-text-3: hsl(52, 100%, 62%);
+$btn-text-sum-3: hsl(198, 20%, 13%);
+
 .theme-1 {
   background-color: $main-1;
 
   header {
     color: $btn-text-operator-1;
+
+    .theme {
+      .container {
+        background-color: $keypad-1;
+      }
+
+      .button {
+        background-color: $btn-sum-1;
+      }
+    }
   }
 
   .input-number {
@@ -46,6 +81,112 @@ $btn-text-1: hsl(221, 14%, 31%);
       background-color: $btn-1;
       color: $btn-text-1;
       box-shadow: 0px 5px 0px 0px $btn-1-shadow;
+    }
+  }
+}
+
+.theme-2 {
+  background-color: $main-2;
+
+  header {
+    color: $btn-text-operator-2;
+    color: $btn-text-2;
+
+    .theme {
+      .container {
+        background-color: $keypad-2;
+      }
+
+      .button {
+        background-color: $btn-sum-2;
+        position: relative;
+        left: 17px;
+      }
+    }
+  }
+
+  .input-number {
+    background-color: $screen-2;
+    color: $btn-text-2;
+
+    &::placeholder {
+      color: $btn-text-operator-2;
+    }
+  }
+
+  .input-button {
+    background-color: $keypad-2;
+
+    .btn-reset,
+    .btn-del {
+      background-color: $btn-reset-2 !important;
+      color: $btn-text-operator-2 !important;
+      box-shadow: 0px 5px 0px 0px $btn-reset-2-shadow !important;
+    }
+
+    .btn-sum {
+      background-color: $btn-sum-2 !important;
+      color: $btn-text-operator-2 !important;
+      box-shadow: 0px 5px 0px 0px $btn-sum-2-shadow !important;
+    }
+
+    .btn {
+      background-color: $btn-2;
+      color: $btn-text-2;
+      box-shadow: 0px 5px 0px 0px $btn-2-shadow;
+    }
+  }
+}
+
+.theme-3 {
+  background-color: $main-3;
+
+  header {
+    color: $btn-text-operator-3;
+    color: $btn-text-3;
+
+    .theme {
+      .container {
+        background-color: $keypad-3;
+      }
+
+      .button {
+        background-color: $btn-sum-3;
+        position: relative;
+        left: 36px;
+      }
+    }
+  }
+
+  .input-number {
+    background-color: $screen-3;
+    color: $btn-text-3;
+
+    &::placeholder {
+      color: $btn-text-operator-3;
+    }
+  }
+
+  .input-button {
+    background-color: $keypad-3;
+
+    .btn-reset,
+    .btn-del {
+      background-color: $btn-reset-3 !important;
+      color: $btn-text-operator-3 !important;
+      box-shadow: 0px 5px 0px 0px $btn-reset-3-shadow !important;
+    }
+
+    .btn-sum {
+      background-color: $btn-sum-3 !important;
+      color: $btn-text-sum-3 !important;
+      box-shadow: 0px 5px 0px 0px $btn-sum-3-shadow !important;
+    }
+
+    .btn {
+      background-color: $btn-3;
+      color: $btn-text-3;
+      box-shadow: 0px 5px 0px 0px $btn-3-shadow;
     }
   }
 }

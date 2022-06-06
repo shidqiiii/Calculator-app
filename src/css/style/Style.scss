@@ -9,13 +9,54 @@ $font-family: "League Spartan", sans-serif;
 
 .calculator {
   max-width: 500px;
-  border: 1px solid black;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 10px;
 
   header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+
+    p {
+      font-size: 30px;
+      margin: 0;
+    }
+
+    .theme {
+      text-transform: uppercase;
+      display: flex;
+      align-items: flex-end;
+
+      p {
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+      }
+
+      .number-toggle {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8px;
+
+        p {
+          margin-right: 0;
+        }
+      }
+
+      .container {
+        width: 60px;
+        padding: 5px;
+        border-radius: 13px;
+
+        .button {
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+    }
   }
 
   .input-number {
@@ -37,7 +78,7 @@ $font-family: "League Spartan", sans-serif;
 
   .input-button {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(4, minmax(0, 100px));
     gap: 15px;
     padding: 20px 10px;
     justify-content: center;

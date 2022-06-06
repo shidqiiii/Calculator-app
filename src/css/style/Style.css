@@ -7,8 +7,7 @@
 
 .calculator {
   max-width: 500px;
-  border: 1px solid black;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 10px;
 }
 
@@ -19,6 +18,58 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+}
+
+.calculator header p {
+  font-size: 30px;
+  margin: 0;
+}
+
+.calculator header .theme {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.calculator header .theme p {
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.calculator header .theme .number-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 8px;
+}
+
+.calculator header .theme .number-toggle p {
+  margin-right: 0;
+}
+
+.calculator header .theme .container {
+  width: 60px;
+  padding: 5px;
+  border-radius: 13px;
+}
+
+.calculator header .theme .container .button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .calculator .input-number {
@@ -40,8 +91,8 @@
 .calculator .input-button {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (100px)[4];
-      grid-template-columns: repeat(4, 100px);
+  -ms-grid-columns: (minmax(0, 100px))[4];
+      grid-template-columns: repeat(4, minmax(0, 100px));
   gap: 15px;
   padding: 20px 10px;
   -webkit-box-pack: center;
