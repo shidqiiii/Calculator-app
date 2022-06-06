@@ -61,6 +61,14 @@
           box-shadow: 0px 5px 0px 0px #b4a597;
 }
 
+.theme-1 .attribution {
+  color: #182034;
+}
+
+.theme-1 .attribution a {
+  color: #eae3dc;
+}
+
 .theme-2 {
   background-color: #e6e6e6;
 }
@@ -127,6 +135,14 @@
           box-shadow: 0px 5px 0px 0px #a69d91;
 }
 
+.theme-2 .attribution {
+  color: #35352c;
+}
+
+.theme-2 .attribution a {
+  color: #ca5502;
+}
+
 .theme-3 {
   background-color: #160628;
 }
@@ -191,5 +207,13 @@
   color: #ffe53d;
   -webkit-box-shadow: 0px 5px 0px 0px #871c9c;
           box-shadow: 0px 5px 0px 0px #871c9c;
+}
+
+.theme-3 .attribution {
+  color: #bc15f4;
+}
+
+.theme-3 .attribution a {
+  color: #ffe53d;
 }
 /*# sourceMappingURL=Color.css.map */

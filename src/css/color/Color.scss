@@ -83,6 +83,14 @@ $btn-text-sum-3: hsl(198, 20%, 13%);
       box-shadow: 0px 5px 0px 0px $btn-1-shadow;
     }
   }
+
+  .attribution {
+    color: $screen-1;
+
+    a {
+      color: $btn-1;
+    }
+  }
 }
 
 .theme-2 {
@@ -136,6 +144,14 @@ $btn-text-sum-3: hsl(198, 20%, 13%);
       box-shadow: 0px 5px 0px 0px $btn-2-shadow;
     }
   }
+
+  .attribution {
+    color: $btn-text-2;
+
+    a {
+      color: $btn-sum-2;
+    }
+  }
 }
 
 .theme-3 {
@@ -187,6 +203,14 @@ $btn-text-sum-3: hsl(198, 20%, 13%);
       background-color: $btn-3;
       color: $btn-text-3;
       box-shadow: 0px 5px 0px 0px $btn-3-shadow;
+    }
+  }
+
+  .attribution {
+    color: $btn-reset-3-shadow;
+
+    a {
+      color: $btn-text-3;
     }
   }
 }

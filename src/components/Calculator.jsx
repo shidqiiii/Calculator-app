@@ -90,6 +90,13 @@ function Calculator() {
       <input type="text" className="input-number" placeholder="0" disabled value={input} />
       <Button inputNumber={inputNumber} reset={reset} deleteNumber={deleteNumber} inputOperator={inputOperator} total={total} />
       {console.log(lastNumber, operator, input)}
+      <div className="attribution">
+        Challenge by{" "}
+        <a target="_blank" href="https://www.frontendmentor.io?ref=challenge" rel="noreferrer">
+          Frontend Mentor
+        </a>
+        . Coded by <a href="https://arunikaproject.netlify.app/">Arunika</a>.
+      </div>
     </div>
   );
 }
